@@ -1,0 +1,17 @@
+ACL Implementation Documentation
+
+Date: 6/5/2025 8:51 PM
+
+Tool: Cisco Packet Tracer
+
+Size: 54 KB
+
+Description: This project implements Access Control Lists (ACLs) to filter traffic. It uses standard and extended ACLs for network security.
+
+Command Syntax:
+
+Standard ACL: access-list 1 permit 192.168.1.0 0.0.0.255, interface fa0/0, ip access-group 1 in
+
+Extended ACL: access-list 101 permit tcp 192.168.1.0 0.0.0.255 any eq 80, interface fa0/0, ip access-group 101 in
+
+Uses: Filters traffic based on source IP (standard) or source/destination IP, protocol, and port (extended) to enforce security policies.

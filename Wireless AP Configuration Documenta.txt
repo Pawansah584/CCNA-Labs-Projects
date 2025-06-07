@@ -1,0 +1,10 @@
+Wireless AP Configuration Documentation
+Date: 6/7/2025 6:24 AM
+Tool: Cisco Packet Tracer
+Size: 61 KB
+
+Description: Sets up a wireless access point (AP) configuration.
+
+Command Syntax: dot11 ssid MYNETWORK, vlan 10, encryption vlan 10 mode ciphers aes, interface dot11radio 0, ssid MYNETWORK
+
+Uses: Provides secure wireless connectivity with VLAN segmentation and encryption.

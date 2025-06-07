@@ -1,0 +1,10 @@
+Summary Route Documentation
+Date: 6/7/2025 8:25 AM
+Tool: Cisco Packet Tracer
+Size: 57 KB
+
+Description: Configures route summarization.
+
+Command Syntax: ip route 192.168.0.0 255.255.0.0 192.168.1.2
+
+Uses: Aggregates multiple routes into a single entry to optimize routing tables

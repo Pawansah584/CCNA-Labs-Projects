@@ -1,0 +1,10 @@
+Switch Port Security Documentation
+Date: 6/5/2025 9:23 PM
+Tool: Cisco Packet Tracer
+Size: 49 KB
+
+Description: Implements port security on a switch.
+
+Command Syntax: interface fa0/1, switchport mode access, switchport port-security, switchport port-security maximum 2
+
+Uses: Restricts port access to specific MAC addresses to prevent unauthorized devices.

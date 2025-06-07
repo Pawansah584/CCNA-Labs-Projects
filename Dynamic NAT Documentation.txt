@@ -1,0 +1,10 @@
+Dynamic NAT Documentation
+Date: 6/5/2025 10:24 PM
+Tool: Cisco Packet Tracer
+Size: 62 KB
+
+Description: Configures Dynamic NAT for multiple internal IPs to share a public IP.
+
+Command Syntax: ip nat pool NAT_POOL 203.0.113.1 203.0.113.10 netmask 255.255.255.0, access-list 1 permit 192.168.1.0 0.0.0.255, ip nat inside source list 1 pool NAT_POOL
+
+Uses: Enables internet access for private IPs using a pool of public IPs, conserving address space.

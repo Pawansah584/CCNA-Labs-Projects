@@ -1,0 +1,10 @@
+STP VLAN Documentation
+Date: 6/5/2025 5:33 PM
+Tool: Cisco Packet Tracer
+Size: 59 KB
+
+Description: Configures Spanning Tree Protocol (STP) and VLANs.
+
+Command Syntax: spanning-tree vlan 10 root primary, vlan 10, name SALES
+
+Uses: Prevents network loops and segments traffic into VLANs for better management.

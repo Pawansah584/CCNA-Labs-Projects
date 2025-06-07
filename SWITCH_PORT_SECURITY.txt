@@ -1,0 +1,47 @@
+SINGLE PORT - MULTIPLE ADDRESS
+
+MAC ADDRESS TABLE
+-> MAX LIMIT 8192 MAC ADDRSSES
+-> BY DEFAULT UNLIMITED MAC ADDRESSES ARE ALLOWED IN EACH PORT
+LAN
+8192 - SIGNAL
+SWITCH - TABLE - 100%
+5 MINS > 0 - REMOVE/REPLACE
+
+-->> IF SWITCH'S MAC ADDRESS TABLE FULL i.e. 8192 MAC ADDRESSES, THEN IT START BROADCAST ALL NEW MAC ADDRESS
+
+-->> CAM OVERFLOW ATTACK(MAC FLOODING) - 100% SUCCESS
+
+PORT SECURITY: - SECURITY TABLE
+--------------
+>> IT IS USED TO LIMIT MAXIMUM MAC ADDRSSES ALLOWED IN EACH PORT
+>> LIMIT = MIN 1 TO MAX 132 recommendation 5 MAC ADDRESSES.
+
+SWITCH TO SINGLE HOST - TURN ON PORT SECURITY
+
+NEW SWITCH - ALL PORTS ARE SET TO DYNAMIC AUTO MODE - ANY DEVICE
+
+LAN
+F0/1-24
+F0/1-15 = SINGLE HOST - access mode - ON - PORT SECURITY
+F0/16-24 = CORE NETWORK DEVICES
+
+SECURITY ACTION:
+- PROTECT
+- RESTRICT
+- SHUTDOWN (DEFAULT)
+
+COMMAND:
+Switch(config)#int range f0/1-15
+Switch(config-if-range)#switchport mode access
+Switch(config-if-range)#switchport port-security
+Switch(config-if-range)#switchport port-security maximum 1
+Switch(config-if-range)#switchport port-security mac-address sticky
+Switch(config-if-range)#switchport port-security protect/restrict/shutdown
+
+Switch#show port-security -- show 
+
+Switch#show int f0/1 -- show port settings
+
+IF PORT HAS VIOLATION SHUTDOWN THEN IT GOES TO DOWN, ERR-DISABLED --> SHUTDWON --> NO SHUTDOWN --> SECURITYVIOLATION COUNT 0
+

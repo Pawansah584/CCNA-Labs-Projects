@@ -1,0 +1,10 @@
+RIP Documentation
+Date: 6/2/2025 5:04 PM
+Tool: Cisco Packet Tracer
+Size: 54 KB
+
+Description: Configures Routing Information Protocol (RIP).
+
+Command Syntax: router rip, network 192.168.1.0, version 2
+
+Uses: Provides simple distance-vector routing for small networks using hop count metric.

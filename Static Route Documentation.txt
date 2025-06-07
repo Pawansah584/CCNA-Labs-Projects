@@ -1,0 +1,10 @@
+Static Route Documentation
+Date: 6/4/2025 8:32 PM
+Tool: Cisco Packet Tracer
+Size: 60 KB
+
+Description: Implements static routing.
+
+Command Syntax: ip route 192.168.2.0 255.255.255.0 192.168.1.2
+
+Uses: Manually defines fixed paths for traffic, useful for small or predictable networks.

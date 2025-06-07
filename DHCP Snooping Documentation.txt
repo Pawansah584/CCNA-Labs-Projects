@@ -1,0 +1,13 @@
+DHCP Snooping Documentation
+
+Date: 6/5/2025 5:41 PM
+
+Tool: Cisco Packet Tracer
+
+Size: 62 KB
+
+Description: Implements DHCP snooping to prevent rogue DHCP servers.
+
+Command Syntax: ip dhcp snooping, ip dhcp snooping vlan 10, interface fa0/1, ip dhcp snooping trust
+
+Uses: Secures DHCP by filtering untrusted ports and building a binding table for IP-MAC validation.

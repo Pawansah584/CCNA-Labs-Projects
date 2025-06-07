@@ -1,0 +1,10 @@
+EIGRP Documentation
+Date: 6/7/2025 7:57 AM
+Tool: Cisco Packet Tracer
+Size: 60 KB
+
+Description: Sets up Enhanced Interior Gateway Routing Protocol (EIGRP).
+
+Command Syntax: router eigrp 100, network 192.168.1.0 0.0.0.255, no auto-summary
+
+Uses: Provides fast convergence and supports unequal-cost load balancing in large networks.

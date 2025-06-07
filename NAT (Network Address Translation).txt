@@ -1,0 +1,37 @@
+NAT (Network Address Translation)
+
+INSIDE >> OUTSIDE NETWORK
+Packet src computer private ip >> our routers
+public ip >> send
+
+OUTSIDE >> INSIDE NETWORK
+Packet dest. router public ip >> computer private ip
+
+TYPES OF NAT:
+1. STATIC NAT: 	Maps one private IP to one public IP (1:1 mapping).
+2. DYNAMIC NAT: Maps multiple private IPs to a pool of public IPs.
+3. PAT (Port Address Translation) : Maps multiple private IPs to one public IP using different port numbers.
+aka NAT Overload
+TCP/UDP: Logical port numbers
+0 - 65535
+> 0 - 1023 - Reserved - Well known ports
+> 1024+ - Free to use.
+HTTP: 80
+HTTPs: 443
+telnet: 23
+ssh: 22
+
+INSIDE LOCAL ADDRESS >> OUR DEVICES PRIVATE IPs
+INSIDE GLOBAL ADDRESS >> OUR ROUTERS PUBLIC IPs
+
+NAT OVERLOAD
+
+HOME_RTR(config)#access-list 1 permit 192.168.10.0 0.0.0.255
+HOME_RTR(config)#int f0/0
+HOME_RTR(config-if)#ip nat inside
+HOME_RTR(config-if)#exit
+HOME_RTR(config)#int f0/1
+HOME_RTR(config-if)#ip nat outside
+HOME_RTR(config-if)#exit
+HOME_RTR(config)#ip nat inside source list 1 int f0/1 overload
+

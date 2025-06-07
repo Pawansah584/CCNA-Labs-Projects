@@ -1,0 +1,10 @@
+Inter-VLAN Routing on ROAS Documentation
+Date: 6/5/2025 5:24 PM
+Tool: Cisco Packet Tracer
+Size: 52 KB
+
+Description: Implements Inter-VLAN routing using Router on a Stick.
+
+Command Syntax: interface fa0/0.10, encapsulation dot1Q 10, ip address 192.168.10.1 255.255.255.0
+
+Uses: Enables routing between VLANs using a single physical interface with subinterfaces.

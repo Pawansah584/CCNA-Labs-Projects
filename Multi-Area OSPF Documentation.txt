@@ -1,0 +1,10 @@
+Multi-Area OSPF Documentation
+Date: 6/5/2025 5:26 PM
+Tool: Cisco Packet Tracer
+Size: 52 KB
+
+Description: Sets up multi-area Open Shortest Path First (OSPF).
+
+Command Syntax: router ospf 1, network 192.168.1.0 0.0.0.255 area 0, area 1 range 192.168.2.0 255.255.255.0
+
+Uses: Segments large networks into areas for scalability and reduced link-state 

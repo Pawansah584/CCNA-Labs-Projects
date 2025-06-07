@@ -1,0 +1,9 @@
+Subnet Calculator GUI Documentation
+Date: 6/5/2025 6:28 PM
+Tool: Python Source File
+Size: 8 KB
+Description: Develops a GUI subnet calculator.
+
+Command Syntax: from tkinter import *, def calc_subnet():, label.config(text=ip + " / " + subnet)
+
+Uses: Calculates subnet masks, IP ranges, and host counts for network 

@@ -1,0 +1,16 @@
+DHCP, DNS, and Web Server Configuration Documentation
+Date: 5/28/2025 7:42 PM
+Tool: Cisco Packet Tracer
+Size: 91 KB
+
+Description: Configures DHCP for IP allocation, DNS for name resolution, and a web server for hosting.
+
+Command Syntax:
+
+DHCP: ip dhcp pool LAN, network 192.168.1.0 255.255.255.0, default-router 192.168.1.1
+
+DNS: ip domain-name example.com, ip name-server 8.8.8.8
+
+Web Server: ip http server, ip http secure-server
+
+Uses: DHCP automates IP assignment, DNS resolves domain names, and web server hosts HTTP/HTTPS services.

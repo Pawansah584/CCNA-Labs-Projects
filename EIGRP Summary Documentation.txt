@@ -1,0 +1,10 @@
+EIGRP Summary Documentation
+Date: 6/7/2025 10:40 AM
+Tool: Cisco Packet Tracer
+Size: 57 KB
+
+Description: Summarizes EIGRP routes for efficiency.
+
+Command Syntax: interface fa0/0, ip summary-address eigrp 100 192.168.0.0 255.255.0.0
+
+Uses: Reduces routing table size and minimizes bandwidth usage in EIGRP networks.

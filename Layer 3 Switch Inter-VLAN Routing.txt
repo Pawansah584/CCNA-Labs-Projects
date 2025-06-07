@@ -1,0 +1,10 @@
+Layer 3 Switch Inter-VLAN Routing Documentation
+Date: 6/5/2025 8:11 AM
+Tool: Cisco Packet Tracer
+Size: 53 KB
+
+Description: Configures a Layer 3 switch for Inter-VLAN routing.
+
+Command Syntax: vlan 10, interface vlan 10, ip address 192.168.10.1 255.255.255.0, no shutdown
+
+Uses: Routes traffic between VLANs at Layer 3, improving performanc

@@ -1,0 +1,10 @@
+VAP & DTP Documentation
+Date: 6/5/2025 5:32 PM
+Tool: Cisco Packet Tracer
+Size: 58 KB
+
+Description: Configures Virtual Access Points (VAP) and Dynamic Trunking Protocol (DTP).
+
+Command Syntax: interface fa0/1, switchport mode trunk, switchport trunk encapsulation dot1q
+
+Uses: Manages VLANs and automates trunk negotiation between switches.
